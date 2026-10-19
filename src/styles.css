@@ -62,43 +62,39 @@
 }
 
 :root {
-  --radius: 0.25rem;
-  --background: oklch(0.14 0.005 260);
-  --foreground: oklch(0.97 0.003 260);
-  --card: oklch(0.18 0.006 260);
-  --card-foreground: oklch(0.97 0.003 260);
-  --popover: oklch(0.18 0.006 260);
-  --popover-foreground: oklch(0.97 0.003 260);
-  --primary: oklch(0.68 0.19 250);
-  --primary-foreground: oklch(0.12 0.01 260);
-  --secondary: oklch(0.24 0.008 260);
-  --secondary-foreground: oklch(0.97 0.003 260);
-  --muted: oklch(0.22 0.006 260);
-  --muted-foreground: oklch(0.68 0.01 260);
-  --accent: oklch(0.68 0.19 250);
-  --accent-foreground: oklch(0.12 0.01 260);
+  --radius: 1rem;
+  --background: oklch(0.96 0.012 80);
+  --foreground: oklch(0.2 0.01 50);
+  --card: oklch(0.93 0.016 75);
+  --card-foreground: oklch(0.2 0.01 50);
+  --popover: oklch(0.96 0.012 80);
+  --popover-foreground: oklch(0.2 0.01 50);
+  --primary: oklch(0.55 0.16 40);
+  --primary-foreground: oklch(0.97 0.01 80);
+  --secondary: oklch(0.2 0.01 50);
+  --secondary-foreground: oklch(0.96 0.012 80);
+  --muted: oklch(0.9 0.015 75);
+  --muted-foreground: oklch(0.45 0.015 55);
+  --accent: oklch(0.55 0.16 40);
+  --accent-foreground: oklch(0.97 0.01 80);
   --destructive: oklch(0.6 0.22 27);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.68 0.19 250);
-  --whatsapp: oklch(0.72 0.17 150);
-  --whatsapp-foreground: oklch(0.14 0.02 150);
-  --shadow-glow: 0 10px 40px -10px color-mix(in oklab, var(--primary) 60%, transparent);
-  --gradient-fade: linear-gradient(180deg, transparent 0%, color-mix(in oklab, var(--background) 70%, transparent) 55%, var(--background) 100%);
+  --border: oklch(0.2 0.01 50 / 14%);
+  --input: oklch(0.2 0.01 50 / 20%);
+  --ring: oklch(0.55 0.16 40);
+  --whatsapp: oklch(0.62 0.15 150);
+  --whatsapp-foreground: oklch(0.98 0.01 150);
+  --shadow-glow: 0 20px 50px -20px color-mix(in oklab, var(--primary) 55%, transparent);
+  --gradient-fade: linear-gradient(180deg, transparent 30%, color-mix(in oklab, var(--secondary) 85%, transparent) 100%);
 }
 
 @theme inline {
   --color-whatsapp: var(--whatsapp);
   --color-whatsapp-foreground: var(--whatsapp-foreground);
-  --font-display: "Anton", Impact, sans-serif;
+  --font-display: "Instrument Serif", Georgia, serif;
   --font-sans: "Manrope", system-ui, sans-serif;
 }
 
-@utility text-outline {
-  -webkit-text-stroke: 1px var(--foreground);
-  color: transparent;
-}
 @utility bg-fade { background-image: var(--gradient-fade); }
 @utility shadow-glow { box-shadow: var(--shadow-glow); }
 
